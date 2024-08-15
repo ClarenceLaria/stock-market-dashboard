@@ -24,7 +24,7 @@ export default function ThemeToggle() {
                 {darkMode ? (
                     <SunIcon onClick={() => setDarkMode(!darkMode)} className='w-6 h-6 m-1'></SunIcon>
                 ) : (
-                    <MoonIcon onClick={() => setDarkMode(!darkMode)} className='w-6 h-6 m-1'></MoonIcon>
+                    <MoonIcon onClick={() => setDarkMode(!darkMode)} className='w-6 h-6 m-1 -rotate-90'></MoonIcon>
                 )}
             </div>
         </div>

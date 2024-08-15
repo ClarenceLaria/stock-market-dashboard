@@ -3,13 +3,9 @@ import { CalendarDaysIcon, MoonIcon, MagnifyingGlassCircleIcon, SunIcon} from '@
 import Link from 'next/link';
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
-import { ThemeContext } from '@/app/context/ThemeContext';
 import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
-    const { toggle, theme } = useContext(ThemeContext) as unknown as { toggle: () => void; theme: string };
-    console.log(theme)
-
     const pathName = usePathname();
     const links = [
         { name: 'Todays Stats', href: '/' },
