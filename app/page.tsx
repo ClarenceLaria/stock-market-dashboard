@@ -31,19 +31,19 @@ export default function Home() {
     fetchData();
   }, []);
 
-  // if (error) {
-  //   return <div>Error: {error}</div>;
-  // }
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
-  // if (!data) {
-  //   return <div>Loading...</div>;
-  // }
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   console.log(data);
   return (
-    <main className="w-full h-full">
+    <main className="w-full h-full ">
       <Header></Header>
-      
+
     </main>
   );
 }
