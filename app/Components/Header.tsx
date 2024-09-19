@@ -1,3 +1,4 @@
+'use client'
 import React, {useContext} from 'react'
 import { CalendarDaysIcon, MoonIcon, MagnifyingGlassCircleIcon, SunIcon} from '@heroicons/react/24/outline'
 import Link from 'next/link';
@@ -35,7 +36,7 @@ export default function Header() {
                         )} 
                         else{
                          return (
-                            <Link href={''} className={clsx(`border-2 border-white flex flex-row h-8 m-1 rounded-md justify-center items-center`, {'bg-navy text-white': pathName === link.href,})}>
+                            <Link href={link.href} className={clsx(`border-2 border-white flex flex-row h-8 m-1 rounded-md justify-center items-center`, {'bg-navy text-white': pathName === link.href,})}>
                                 <h1 className=' pr-2 '>{link.name}:</h1>
                                 <h1>2.2M+</h1>
                             </Link>

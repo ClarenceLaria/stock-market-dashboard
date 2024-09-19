@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import { MoonIcon, SunIcon } from '@heroicons/react/24/outline'
+import { MoonIcon, } from '@heroicons/react/24/outline'
+import { SunIcon } from '@heroicons/react/24/solid';
 export default function ThemeToggle() {
     const [darkMode, setDarkMode] = useState(true);
 
@@ -22,7 +23,7 @@ export default function ThemeToggle() {
         <div className='flex justify-between items-center mx-2 cursor-pointer rounded-md dark:bg-slate-900 dark:text-white bg-gray-200'>
             <div className='border-2 flex border-white h-8 m-1 rounded-md'>
                 {darkMode ? (
-                    <SunIcon onClick={() => setDarkMode(!darkMode)} className='w-6 h-6 m-1'></SunIcon>
+                    <SunIcon onClick={() => setDarkMode(!darkMode)} className='w-6 h-6 m-1 text-yellow-200'></SunIcon>
                 ) : (
                     <MoonIcon onClick={() => setDarkMode(!darkMode)} className='w-6 h-6 m-1 -rotate-90'></MoonIcon>
                 )}

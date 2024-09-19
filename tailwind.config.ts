@@ -17,7 +17,7 @@ const config: Config = {
       colors:{
         navy: '#26045D',
         violet: '#7747FF',
-        purple: '#F1EDFF',
+        purpley: '#F1EDFF',
       },
     },
   },
